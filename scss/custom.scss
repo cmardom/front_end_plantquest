@@ -11,7 +11,6 @@
 .background-image {
   position: absolute;
   top: 0;
-
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -27,4 +26,36 @@
   transform: scaleX(-1); /* Invertir la imagen horizontalmente */
 
 
+}
+
+.background-container-footer {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Altura deseada para el contenedor */
+  overflow: hidden;
+  z-index: -1;
+
+
+}
+
+
+.background-image-footer {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+
+}
+
+.background-image-footer-invertido.invertido-footer {
+  transform: scaleX(-1); /* Invertir la imagen horizontalmente */
+
+
+
+}
+
+.invertido-footer{
+  right: 0;
+  left: auto;
 }
