@@ -2,6 +2,10 @@
 @include bsBanner("");
 
 
+
+//Custom
+@import "custom";
+
 // scss-docs-start import-stack
 // Configuration
 @import "functions";
@@ -53,6 +57,3 @@
 
 
 
-
-//Custom
-@import "custom";
