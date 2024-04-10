@@ -1,0 +1,195 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlantQuest</title>
+  <link rel="stylesheet" href="dist/css/custom.css">
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <title>Plant Quest</title>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="mx-auto d-flex justify-content-around align-items-center">
+
+      <form class="d-flex">
+        <div class="text-white">
+          <span class="material-symbols-outlined">search</span>
+        </div>
+        <a href="#" class="link-light ">búsqueda</a>
+      </form>
+
+      <div class="w-25">
+        <img class="img-fluid" src="./images/Logotipo%20Plantas%20y%20Flores%20Dibujo%20Hojas%20Circular%20Verde.png" alt="Logo">
+
+      </div>
+
+      <form class="d-flex">
+        <a href="sesion.html" class="link-light">inicia sesión</a>
+        <div class="text-white">
+          <span class="material-symbols-outlined"> login</span>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-primary text-center">
+    <div class="mx-auto d-flex justify-content-around align-items-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">blog</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link text-white" aria-current="page" href="./cuestionario.html">cuestionario</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link text-white" aria-current="page" href="#">plantas</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link text-white" aria-current="page" href="#">preguntas frecuentes</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link text-white" aria-current="page" href="#">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section >
+    <div class="container-xl ">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-9 col-lg-6 col-xl-4 container-fluid">
+          <img src="/images/hudai-gayiran-i8P9zdvQnhc-unsplash%20-%20Editada.png" class="img-fluid" alt=" image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-6 mr-3">
+          <form >
+
+            <!-- Nombre input -->
+            <div data-mdb-input-init class="form-outline my-4 ">
+              <label class="form-label" for="form3Example1">Nombre </label>
+
+              <input type="email" id="form3Example1" class="form-control form-control"
+                     placeholder="Tu nombre" />
+            </div>
+
+            <!-- Usuario input -->
+            <div data-mdb-input-init class="form-outline my-4 ">
+              <label class="form-label" for="form3Example2">Nick </label>
+
+              <input type="email" id="form3Example2" class="form-control form-control"
+                     placeholder="Tu nick" />
+            </div>
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline my-4 ">
+              <label class="form-label" for="form3Example3">Email </label>
+
+              <input type="email" id="form3Example3" class="form-control form-control"
+                     placeholder="ejemplo@correo.com" />
+            </div>
+
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-3">
+              <label class="form-label" for="form3Example4">Contraseña</label>
+
+              <input type="password" id="form3Example4" class="form-control form-control"
+                     placeholder="******" />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="1" />
+                <label class="form-check-label" for="1">
+                  Quiero suscribirme a la newsletter
+                </label>
+              </div>
+              <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="2" />
+                <label class="form-check-label" for="2">
+                  Acepto la política de privacidad
+                </label>
+              </div>
+              <a href="sesion.html" class="text-body">¿Ya tienes cuenta?</a>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary ">Regístrate</button>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+</main>
+
+<div class="bg-primary">
+  <footer class="container-xl">
+    <div class=" row justify-content-center">
+      <div id="center" class="row text-center bg-primary">
+        <div class="col-12 container-fluid">
+          <img class="img-fluid w-25" src="/images/Logotipo%20Plantas%20y%20Flores%20Dibujo%20Hojas%20Circular%20Verde.png" alt="Logo"> <!-- Removed col-12 class from here -->
+        </div>
+        <div class="social ">
+          <a href="#"><i class="icon ion-social-instagram"></i></a>
+          <a href="#"><i class="icon ion-social-twitter"></i></a>
+          <a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline col-12 ">
+          <li class="list-inline-item"><a class="text-white nav-link" href="#">cuestionario</a></li>
+          <li class="list-inline-item"><a class="text-white nav-link" href="#">plantas</a></li>
+          <li class="list-inline-item"><a class="text-white nav-link" href="#">política de privacidad</a></li>
+          <li class="list-inline-item"><a class="text-white nav-link" href="#">términos de uso</a></li>
+          <li class="list-inline-item"><a class="text-white nav-link" href="#">contacto</a></li>
+
+        </ul>
+        <p class="copyright text-white text-center">cmardom © 2023</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="dist/js/bootstrap.js"></script>
+</body>
+</html>
