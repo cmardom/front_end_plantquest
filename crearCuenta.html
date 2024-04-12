@@ -92,12 +92,13 @@
 
 <main>
   <section >
-    <div class="container-xl ">
+    <div class="container-xl " style="background-image: url(images/a82ead79-08b6-400f-94f7-4f89b27fb439.png); background-size: cover">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-9 col-lg-6 col-xl-4 container-fluid">
-          <img src="/images/hudai-gayiran-i8P9zdvQnhc-unsplash%20-%20Editada.png" class="img-fluid" alt=" image">
-        </div>
-        <div class="col-md-8 col-lg-6 col-xl-6 mr-3">
+
+        <div class="col-md-8 col-lg-6 col-xl-6 mr-3" >
+          <br>
+          <h1> Registro</h1>
+
           <form >
 
             <!-- Nombre input -->
@@ -108,12 +109,12 @@
                      placeholder="Tu nombre" />
             </div>
 
-            <!-- Usuario input -->
+            <!-- Apellidos input -->
             <div data-mdb-input-init class="form-outline my-4 ">
-              <label class="form-label" for="form3Example2">Nick </label>
+              <label class="form-label" for="form3Example2">Apellidos </label>
 
               <input type="email" id="form3Example2" class="form-control form-control"
-                     placeholder="Tu nick" />
+                     placeholder="Tus apellidos" />
             </div>
 
             <!-- Email input -->
@@ -132,7 +133,21 @@
                      placeholder="******" />
             </div>
 
-            <div class="d-flex justify-content-between align-items-center">
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-3">
+              <label class="form-label" for="form4">Repite tu contraseña</label>
+
+              <input type="password" id="form4" class="form-control form-control"
+                     placeholder="******" />
+            </div>
+
+            <!-- Foto input -->
+            <div data-mdb-input-init class="form-outline mb-3">
+              <label for="profile-picture">Sube una foto de perfil:</label>
+              <input type="file" id="profile-picture" name="profile"/>
+            </div>
+
+
               <!-- Checkbox -->
               <div class="form-check mb-0">
                 <input class="form-check-input me-2" type="checkbox" value="" id="1" />
@@ -146,15 +161,18 @@
                   Acepto la política de privacidad
                 </label>
               </div>
-              <a href="sesion.html" class="text-body">¿Ya tienes cuenta?</a>
-            </div>
+            <br>
+             <p>¿Ya tienes cuenta? <a  class="text-primary">Inicia sesión</a></p>
+
 
             <div class="text-center text-lg-start mt-4 pt-2">
-              <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary ">Regístrate</button>
-
+              <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary ">Enviar</button>
             </div>
+            <br>
+
 
           </form>
+
         </div>
       </div>
     </div>

@@ -32,6 +32,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
   <link rel="manifest" href="site.webmanifest">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <meta name="theme-color" content="#fafafa">
 
 <title>Plant Quest</title>
@@ -45,16 +47,16 @@
         <div class="text-white">
           <span class="material-symbols-outlined">search</span>
         </div>
-        <a href="#" class="link-light ">búsqueda</a>
+        <a href="#" class="text-white">búsqueda</a>
       </form>
 
       <div class="w-25">
-        <img class="img-fluid" src="./images/Logotipo%20Plantas%20y%20Flores%20Dibujo%20Hojas%20Circular%20Verde.png" alt="Logo">
+        <img class="img-fluid"  src="./images/Logotipo%20Plantas%20y%20Flores%20Dibujo%20Hojas%20Circular%20Verde.png" alt="Logo">
 
       </div>
 
       <form class="d-flex">
-        <a href="sesion.html" class="link-light">inicia sesión</a>
+        <a data-bs-toggle="modal" data-bs-target="#modal" href="sesion.html" class="text-white">inicia sesión</a>
         <div class="text-white">
           <span class="material-symbols-outlined"> login</span>
         </div>
@@ -70,7 +72,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="#">blog</a>
+            <a class="nav-link text-white" aria-current="page" href="index.html">inicio</a>
           </li>
           <li class="nav-item ms-5">
             <a class="nav-link text-white" aria-current="page" href="./cuestionario.html">cuestionario</a>
@@ -79,7 +81,7 @@
             <a class="nav-link text-white" aria-current="page" href="#">plantas</a>
           </li>
           <li class="nav-item ms-5">
-            <a class="nav-link text-white" aria-current="page" href="#">preguntas frecuentes</a>
+            <a class="nav-link text-white" aria-current="page" href="#">blog</a>
           </li>
           <li class="nav-item ms-5">
             <a class="nav-link text-white" aria-current="page" href="#">contacto</a>
@@ -91,51 +93,37 @@
 </header>
 
 <main>
-  <div class="background-container container-fluid">
-    <div class="background-image w-50 z-n1" style="background-image: url('/images/210f064a-4789-4696-b9ee-8ea760e9e23c.png');"></div>
-    <div class="background-image invertido w-50 z-n1" style="background-image: url('/images/210f064a-4789-4696-b9ee-8ea760e9e23c.png');"></div>
 
-    <div class="container-fluid px-4 py-5 my-5 text-center z-1">
-      <div class="lc-block col-lg-6 mx-auto mb-4 bg-white">
-        <div>
-          <p class="lead ">Descubre la planta perfecta para tu hogar. Nuestro cuestionario te guiará hacia la elección ideal, armonizando naturaleza y espacio con elegancia y precisión.
-          Inicia tu viaje botánico aquí.</p>
-        </div>
-      </div>
-      <!-- NO FUNCIONA EL BOTON CON LAS IMAGENES Y Z-INDEX -->
-      <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary">encuentra tu planta</button>
-      </div>
-    </div>
-  </div>
 
 
 
 
 <div class="container-xl">
-  <div class="container-xl px-4 py-5 my-5 row justify-content-center">
-    <hr class="w-50 bg-black">
-  </div>
+  <br>
   <div class="row justify-content-center text-center">
 
       <h1 class="row justify-content-center">¿Qué es Plant Quest?</h1>
+      <hr>
       <p class="w-75 lead">
         Somos un equipo de entusiastas de las plantas, expertos en tecnología y apasionados jardineros urbanos, unidos por una misión: transformar hogares en santuarios verdes. Con profunda admiración por la naturaleza, nos dedicamos a crear una plataforma donde cada persona pueda encontrar su compañero vegetal ideal.
       </p>
       <p class="w-75 lead">
         En Plant Quest, creemos firmemente en el poder de las plantas para mejorar nuestra calidad de vida. Ya sea purificando el aire, mejorando nuestro estado de ánimo o simplemente añadiendo un toque de belleza a nuestro entorno diario, las plantas tienen una manera única de transformar cualquier espacio.
       </p>
-
-
   </div>
+
+    <div class="container-fluid  text-center">
+      <div class="lc-block col-lg-6 mx-auto mb-4 bg-white">
+          <p class="lead ">Por ello hemos creado un cuestionario que, a partir de los datos ambientales de tu hogar y siempre teniendo en cuenta tus necesidades, te aconsejará la planta perfecta para ti.</p>
+      </div>
+      <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary">realiza el cuestionario</button>
+      </div>
+    </div>
 </div>
 
 
-  <div class="container-xl px-4 py-5 my-5 row justify-content-center">
-<!--    <img class="img-fluid h-25 z-0" src="images/a4bbca26-c50c-4131-9acc-fc44ace1e6ed.png"> -->
-    <hr class="w-50 bg-black">
-  </div>
-
+<div class="bg-opacity-25 bg-info ">
 <!--CAROUSEL : blog -->
   <div class="container-xl">
     <div class="px-4 py-5 my-5 row justify-content-center">
@@ -228,8 +216,8 @@
         </div>
 
         <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+          <span class="visually-hidden ">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -238,76 +226,96 @@
       </div>
     </div>
   </div>
-
+</div>
   <!--CUESTIONARIO: lead -->
 
-  <div class="container-xl px-4 py-5 my-5 row justify-content-center">
-    <hr class="w-50 bg-black">
-  </div>
 
-  <div class="container-xl">
-    <div class="px-4 py-5 my-5 row justify-content-center">
+<!--  <div class="container-xl">-->
+<!--    <div class="px-4 py-5 my-5 row justify-content-center">-->
 
-      <h2 class="row justify-content-center">Cuestionario</h2>
-      <div class="lc-block text-center">
-        <div>
-          <p class="lead">Descubre con nuestro cuestionario la planta ideal para tu hogar, una herramienta fiable y muy apreciada por su sencillez y precisión. Te guiará fácilmente hacia la elección perfecta, asegurándote resultados personalizados y exactos. Con nosotros encontrarás esa planta que encaja perfectamente en tu espacio y vida. Experimenta la confianza de tomar la decisión correcta para tu hogar.</p>
-        </div>
-      </div>
-      <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="customButton btn btn-primary">encuentra tu planta</button>
+<!--      <h2 class="row justify-content-center">Cuestionario</h2>-->
+<!--      <div class="lc-block text-center">-->
+<!--        <div>-->
+<!--          <p class="lead">Descubre con nuestro cuestionario la planta ideal para tu hogar, una herramienta fiable y muy apreciada por su sencillez y precisión. Te guiará fácilmente hacia la elección perfecta, asegurándote resultados personalizados y exactos. Con nosotros encontrarás esa planta que encaja perfectamente en tu espacio y vida. Experimenta la confianza de tomar la decisión correcta para tu hogar.</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">-->
+<!--        <button type="button" class="customButton btn btn-primary">encuentra tu planta</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+
+<!--        <div class="row ">-->
+<!--          <img class="background-image-footer z-n1  " src="images/202a518d-6fe9-46aa-a491-5869504a3b57.png">-->
+<!--          <img class="background-image-footer invertido-footer z-n1 " src="images/202a518d-6fe9-46aa-a491-5869504a3b57.png">-->
+<!--        </div>-->
+
+
+
+
+    <div class="container-xl row mx-auto text-center" >
+
+<!--      <div class="list-group col-6  ">-->
+<!--        <h4 class="row justify-content-center mb-3">Las más recomendadas</h4>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Sansevieria Trifasciata</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Ficus Elastica</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Zamioculca Zamiifolia</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Pothos aureo</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Philodendron Birkin</a>-->
+
+<!--        <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mt-3">-->
+<!--          <button type="button" class="btn btn-primary mb-5">ver más</button>-->
+
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="list-group col-6 ">-->
+<!--        <h4 class="row justify-content-center mb-3">Las más buscadas</h4>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Sansevieria Trifasciata</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Ficus Elastica</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Zamioculca Zamiifolia</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Pothos aureo</a>-->
+<!--        <a href="#" class="list-group-item list-group-item-action text-center fw-light">Philodendron Birkin</a>-->
+
+<!--        <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mt-3">-->
+<!--          <button type="button" class="btn btn-primary mb-5">ver más</button>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <h1 class="text-center">Plantas populares</h1>
+      <div class="body1">
+        <hr>
+
+        <ol class="gradient-list">
+        <li><a href="#">Sansevieria Trifasciata</a></li>
+        <li><a href="#">Ficus Elastica</a></li>
+        <li><a href="#">Pothos aureo</a></li>
+        <li><a href="#">Philodendron Birkin</a></li>
+        <li><a href="#">Zamioculca Zamiifolia</a></li>
+
+
+
+      </ol>
       </div>
     </div>
-  </div>
 
 
-  <div class="container-fluid px-4 py-5 my-5 ">
-
-    <hr class="w-50 bg-black mx-auto">
-  </div>
-
-      <div class="background-container-footer ">
-        <div class="row ">
-          <img class="background-image-footer z-n1  w-25 " src="images/202a518d-6fe9-46aa-a491-5869504a3b57.png">
-          <img class="background-image-footer invertido-footer z-n1 img-fluid w-25" src="images/202a518d-6fe9-46aa-a491-5869504a3b57.png">
-        </div>
-
-        <div class="container-xl row mx-auto text-center">
-          <h2 class="row text-center">Plantas populares</h2>
-
-          <div class="list-group col-6  ">
-            <h4 class="row justify-content-center mb-3">Las más recomendadas</h4>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Sansevieria Trifasciata</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Ficus Elastica</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Zamioculca Zamiifolia</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Pothos aureo</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Philodendron Birkin</a>
-
-            <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mt-3">
-              <button type="button" class="btn btn-primary mb-5">ver más</button>
-
-            </div>
-          </div>
-
-          <div class="list-group col-6 ">
-            <h4 class="row justify-content-center mb-3">Las más buscadas</h4>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Sansevieria Trifasciata</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Ficus Elastica</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Zamioculca Zamiifolia</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Pothos aureo</a>
-            <a href="#" class="list-group-item list-group-item-action text-center fw-light">Philodendron Birkin</a>
-
-            <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mt-3">
-              <button type="button" class="btn btn-primary mb-5">ver más</button>
-            </div>
-          </div>
 
 
-        </div>
 
-      </div>
+  <form id="formContact" class="topBefore text-center">
+    <h1>Contacto</h1>
+    <hr>
+    <p class="lead">¿Sugerencias? ¿Dudas?</p>
+    <p class="lead">Déjanos un mensaje y háznoslo saber :)</p>
+    <input class="input1 " id="name" type="text" placeholder="Nombre">
+    <input class="input1" id="email" type="text" placeholder="Email">
+    <textarea class="textarea1" id="message" type="text" placeholder="Mensaje"></textarea>
+    <input class="input1 submit1" id="submit" type="submit" value="Enviar">
 
-
+  </form>
 
 </main>
 
@@ -327,7 +335,7 @@
           <li class="list-inline-item"><a class="text-white nav-link" href="#">cuestionario</a></li>
           <li class="list-inline-item"><a class="text-white nav-link" href="#">plantas</a></li>
           <li class="list-inline-item"><a class="text-white nav-link" href="#">política de privacidad</a></li>
-          <li class="list-inline-item"><a class="text-white nav-link" href="#">términos de uso</a></li>
+          <li class="list-inline-item"><a class="text-white nav-link" href="#">preguntas frecuentes</a></li>
           <li class="list-inline-item"><a class="text-white nav-link" href="#">contacto</a></li>
 
         </ul>
@@ -336,6 +344,94 @@
     </div>
   </footer>
 </div>
+
+
+
+
+
+<!-- MODAL > SESION-->
+<div class="modal fade text-dark" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="modalLabel" >Inicia sesiion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+
+
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline my-4 ">
+            <label class="form-label" for="form3Example3">Email </label>
+
+            <input type="email" id="form3Example3" class="form-control form-control"
+                   placeholder="ejemplo@correo.com" />
+          </div>
+
+          <!-- Password input -->
+          <div data-mdb-input-init class="form-outline mb-3">
+            <label class="form-label" for="form3Example4">Contraseña</label>
+
+            <input type="password" id="form3Example4" class="form-control form-control"
+                   placeholder="******" />
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label class="form-check-label" for="form2Example3">
+                Recuérdame
+              </label>
+            </div>
+            <a href="#!" class="text-body">¿Has olvidado tu contraseña?</a>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary ">Inicia sesión</button>
+
+            <p class="small fw-bold mt-2 pt-1 mb-5">
+              ¿No tienes cuenta? <a href="crearCuenta.html" class="link-underline-primary" id="crearCuenta">Regístrate aquí</a>
+            </p>
+
+
+          </div>
+
+        </form>
+      </div>
+<!--      <div class="modal-footer">-->
+<!--        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" ></button>-->
+<!--        <button type="button" class="btn btn-danger" >Cancelar</button>-->
+<!--      </div>-->
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="modal fade text-dark" id="modalCrearCuenta" tabindex="-1" aria-labelledby="modalCrearCuentaLabel" aria-hidden="true">-->
+<!--  <div class="modal-dialog">-->
+<!--    <div class="modal-content">-->
+<!--      &lt;!&ndash; Contenido del segundo modal &ndash;&gt;-->
+<!--      <div class="modal-header">-->
+<!--        <h5 class="modal-title" id="modalCrearCuentaLabel">Crea una cuenta</h5>-->
+<!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--      </div>-->
+<!--      <div class="modal-body">-->
+<!--        &lt;!&ndash; Formulario para crear una cuenta &ndash;&gt;-->
+<!--      </div>-->
+<!--      <div class="modal-footer">-->
+<!--        &lt;!&ndash; Botones de acción &ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
 <script src="dist/js/bootstrap.js"></script>
+
+
+
+
+
 </body>
 </html>
