@@ -45,7 +45,7 @@
         <div class="text-white">
           <span class="material-symbols-outlined">search</span>
         </div>
-        <a href="#" class="link-light ">búsqueda</a>
+        <a href="#" class="text-white">búsqueda</a>
       </form>
 
       <div class="w-25">
@@ -54,7 +54,7 @@
       </div>
 
       <form class="d-flex">
-        <a href="sesion.html" class="link-light">inicia sesión</a>
+        <a data-bs-toggle="modal" data-bs-target="#modal" href="sesion.html" class="text-white">inicia sesión</a>
         <div class="text-white">
           <span class="material-symbols-outlined"> login</span>
         </div>
@@ -95,22 +95,180 @@
 
     <div class="container-fluid px-4 py-5 my-5 text-center ">
 
-      <div class="lc-block col-lg-6 mx-auto mb-4 bg-white ">
+      <div class="col-lg-8 mx-auto bg-white ">
         <div>
           <h1 class="row justify-content-center">Cuestionario</h1>
+          <hr>
+          <p class="lead ">Te presentamos nuestro cuestionario especializado en <span class="fw-semibold">plantas de interior</span> compuesto por 10 preguntas sobre el entorno que compone tu hogar.
+            A través de un análisis exhaustivo de los parámetros introducidos, podremos recomendarte la planta perfecta para ese lugar especial en tu hogar.
+            <br>Con PlantQuest, encuentras tu planta.
+          </p>
+        </div>
 
-          <p class="lead ">¿Te encantan las plantas pero no te decides a la hora de elegir? Quieres añadir un toque de naturaleza a tu espacio pero no sabes por dónde empezar?
-          En solo unos minutos, nuestro cuestionario personalizado te guiará para encontrar la planta ideal que mejor se adapta a tu entorno y estilo de vida. Solo necesitamos que nos cuentes un poco sobre el lugar donde vives, la cantidad de luz natural que recibe y el espacio disponible.
-          ¿Listo para darle vida a tu hogar con la planta perfecta? ¡Empecemos!</p>
+
+        <div class="body1">
+          <form class="was-validated">
+            <ol class="gradient-list">
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Cuántas horas de luz natural recibes en tu hogar?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1">
+                <label class="custom-control-label" for="customControlValidation1">Menos de 3 horas</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation2" >
+                <label class="custom-control-label" for="customControlValidation2">De 3 a 6 horas</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation3" >
+                <label class="custom-control-label" for="customControlValidation3">De 6 a 9 horas</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Más de 9 horas</label>
+                <br>
+              </li>
+
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Qué tipo de luz es?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">Baja</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Indirecta o filtrada</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Brillante</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Directa</label>
+              </li>
+
+
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Cuál es la dirección de tus ventanas?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">Norte</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Sur</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Este</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Oeste</label>
+                <br>
+              </li>
+
+
+
+
+
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Cuánto espacio tienes para tu planta?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">Pequeño</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Mediano</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Grande</label>
+                <br>
+              </li>
+
+
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Cómo te gustaría exhibir tu planta en casa?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">En la mesa</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">En el suelo</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Colgando</label>
+                <br>
+              </li>
+
+
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Cuánta humedad hay normalmente en este lugar?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">Muy poca (menos de 35%)</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Moderada (alrededor de 45%) </label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Mucha (más de 50%)</label>
+                <br>
+
+              </li>
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Y la temperatura media?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">De 20º a 25º</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">De 25º a 30ª</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Más 30ª</label>
+              </li>
+
+
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Tienes mascotas o niños que puedan interactuar con la planta?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">Tengo mascotas</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Tengo niños</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Ambos</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Ninguno</label>
+
+              </li>
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Con qué frecuencia podrías regalarla?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">Una vez a la semana</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Cada dos semanas</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Una vez al mes</label>
+                <br>
+              </li>
+
+              <li class="custom-control custom-checkbox mb-3">
+                <h4>¿Qué tipo de planta prefieres?</h4>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+                <label class="custom-control-label" for="customControlValidation1">Plantas de hojas verdes</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Plantas que florezcan</label>
+                <br>
+                <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+                <label class="custom-control-label" for="customControlValidation4">Cactus y crasas</label>
+                <br>
+
+              </li>
+
+
+            </ol>
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary ">Enviar datos</button>
+          </form>
+
         </div>
       </div>
     </div>
 
 
 
-  <div class="container-xl px-4 py-5  row justify-content-center">
-    <hr class="w-50 bg-black">
-  </div>
+
 
 
 
@@ -142,6 +300,72 @@
     </div>
   </footer>
 </div>
+<div class="modal fade text-dark" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="modalLabel" >Inicia sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+
+
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline my-4 ">
+            <label class="form-label" for="form3Example3">Email </label>
+
+            <input type="email" id="form3Example3" class="form-control form-control"
+                   placeholder="ejemplo@correo.com" />
+          </div>
+
+          <!-- Password input -->
+          <div data-mdb-input-init class="form-outline mb-3">
+            <label class="form-label" for="form3Example4">Contraseña</label>
+
+            <input type="password" id="form3Example4" class="form-control form-control"
+                   placeholder="******" />
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label class="form-check-label" for="form2Example3">
+                Recuérdame
+              </label>
+            </div>
+            <a href="#!" class="text-body">¿Has olvidado tu contraseña?</a>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary ">Inicia sesión</button>
+
+            <p class="small fw-bold mt-2 pt-1 mb-5">
+              ¿No tienes cuenta? <a href="crearCuenta.html" class="link-underline-primary" id="crearCuenta">Regístrate aquí</a>
+            </p>
+
+
+          </div>
+
+        </form>
+      </div>
+      <!--      <div class="modal-footer">-->
+      <!--        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" ></button>-->
+      <!--        <button type="button" class="btn btn-danger" >Cancelar</button>-->
+      <!--      </div>-->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 <script src="dist/js/bootstrap.js"></script>
 </body>
 </html>

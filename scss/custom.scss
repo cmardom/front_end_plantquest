@@ -3,14 +3,14 @@
 /* Colors */
 $black: #1d1f20;
 $blue: #27c754;
-$green: #a2ed56;
+$green: #487916;
 $yellow: #fddc32;
 $white: #fafafa;
 
 .body1 {
   display: block;
   margin: 0 auto;
-  max-width: 40rem;
+  max-width: 100rem;
   padding: 1rem;
 }
 
@@ -101,7 +101,7 @@ ol.gradient-list {
 
 
     #submit:hover{
-      background-color: #697859;
+      background-color: #FDDC32FF;
     }
   }
 
@@ -128,8 +128,10 @@ ol.gradient-list {
   }
 
   .submit1:hover{
-    background-color: #7bb561;
+    background-color: #487916;
     color: white;
   }
 
 }
+
+
